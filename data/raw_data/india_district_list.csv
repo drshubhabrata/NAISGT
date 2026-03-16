@@ -1,6 +1,21 @@
+state,district,state_code,district_code
 Maharashtra,Nanded,27,485
 Maharashtra,Gadchiroli,27,481
 Maharashtra,Chandrapur,27,475
 Gujarat,Narmada,24,485
 Gujarat,Surat,24,490
 Gujarat,Ahmedabad,24,474
+Madhya Pradesh,Indore,23,314
+Madhya Pradesh,Bhopal,23,302
+Rajasthan,Jaipur,08,106
+Rajasthan,Udaipur,08,153
+Karnataka,Bengaluru Urban,29,265
+Karnataka,Mysuru,29,266
+Tamil Nadu,Chennai,33,571
+Tamil Nadu,Madurai,33,545
+Uttar Pradesh,Lucknow,09,135
+Uttar Pradesh,Varanasi,09,221
+West Bengal,Kolkata,19,141
+West Bengal,Howrah,19,133
+Bihar,Patna,10,233
+Bihar,Gaya,10,229
