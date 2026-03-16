@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load NAISGT master dataset
-df = pd.read_csv("../data/processed_data/anganwadi_master_template.csv")
+df = pd.read_csv("../data/processed_data/anganwadi_master_dataset.csv")
 
 # ------------------------------
 # Infrastructure Gap Calculation
@@ -30,6 +30,11 @@ df["naiskt_gap_score"] = (
     0.3 * df["worker_vacancy_rate"] +
     0.2 * df["helper_vacancy_rate"]
 )
+
+# ------------------------------
+# Rank Districts by Gap Score
+# ------------------------------
+df["gap_rank"] = df["naiskt_gap_score"].rank(ascending=False)
 
 # ------------------------------
 # Save Output Dataset
