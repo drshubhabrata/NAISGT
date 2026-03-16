@@ -6,16 +6,26 @@ districts = pd.read_csv("../data/raw_data/india_district_list.csv")
 # Create empty master dataset
 master = districts.copy()
 
-# Add NAISGT indicator columns
-master["total_awcs"] = None
-master["mini_awcs"] = None
-master["own_buildings"] = None
-master["rented_buildings"] = None
-master["toilets_available"] = None
-master["drinking_water_available"] = None
-master["electricity_available"] = None
+# Add Anganwadi indicators
+columns = [
+    "total_awcs",
+    "mini_awcs",
+    "own_buildings",
+    "rented_buildings",
+    "toilets_available",
+    "drinking_water_available",
+    "electricity_available",
+    "kitchen_available",
+    "worker_sanctioned",
+    "worker_in_position",
+    "helper_sanctioned",
+    "helper_in_position"
+]
+
+for col in columns:
+    master[col] = None
 
 # Save template dataset
 master.to_csv("../data/processed_data/anganwadi_master_template.csv", index=False)
 
-print("Template dataset created")
+print("Master template created successfully")
