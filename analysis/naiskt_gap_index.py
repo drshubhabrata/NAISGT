@@ -42,3 +42,14 @@ df["gap_rank"] = df["naiskt_gap_score"].rank(ascending=False)
 df.to_csv("../data/processed_data/anganwadi_gap_index.csv", index=False)
 
 print("NAISGT Gap Index calculated successfully.")
+def classify_gap(score):
+    if score > 0.5:
+        return "Critical"
+    elif score > 0.3:
+        return "High"
+    elif score > 0.15:
+        return "Moderate"
+    else:
+        return "Low"
+
+df["gap_category"] = df["naiskt_gap_score"].apply(classify_gap)
