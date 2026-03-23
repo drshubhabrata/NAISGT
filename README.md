@@ -4,46 +4,91 @@
 
 NAISGT is a public health data platform designed to identify infrastructure, workforce, and service delivery gaps in Anganwadi Centres across India.
 
-### Objective
+---
+
+## 🎯 Objective
 
 To build a national evidence-based monitoring system that highlights critical gaps in Anganwadi infrastructure, human resources, and service delivery using open government datasets.
 
-### Key Goals
+---
 
-* Map Anganwadi infrastructure gaps across districts
-* Identify workforce shortages
-* Track service delivery coverage
-* Generate district-level gap reports
-* Provide data-driven insights for policymakers
+## 📊 Gap Index Methodology
 
-### Data Sources
+A composite **Anganwadi Gap Score** is calculated using:
 
-* ICDS administrative data
-* Poshan Tracker datasets
-* NFHS survey data
-* Census demographic data
+Gap Score =  
+(0.6 × Infrastructure Gap) +  
+(0.2 × Worker Vacancy Rate) +  
+(0.2 × Helper Vacancy Rate)
 
-### Project Components
+This weighted index helps prioritize districts with the most critical service gaps.
 
-1. Data collection and cleaning
-2. Gap analysis using Python
-3. District and block level gap index
-4. Interactive dashboard and maps
+---
 
-### Expected Outputs
+## 🔍 Key Findings (Pilot Analysis)
 
-* National Anganwadi gap dashboard
-* District gap severity index
-* Public health policy reports
+- **Narmada (Gujarat)** has the highest gap score (0.217)
+- **Maharashtra districts** (Gadchiroli, Chandrapur, Nanded) show consistently high gaps
+- Urban districts like **Hyderabad, Bengaluru, Chennai** also show notable service gaps
+- **Ernakulam (Kerala)** shows the lowest gap score, indicating better system performance
 
-### Pilot Districts
+---
 
-* Nanded (Maharashtra)
-* Gadchiroli (Maharashtra)
-* Chandrapur (Maharashtra)
-* Narmada (Gujarat)
+## 📂 Data Sources
 
-### Author
+- ICDS administrative data  
+- Poshan Tracker datasets  
+- NFHS survey data  
+- Census demographic data  
 
-Dr Shubhabrata Das
+---
+
+## ⚙️ Project Components
+
+1. Data collection and cleaning  
+2. Gap analysis using structured datasets  
+3. District-level gap index development  
+4. Comparative ranking and prioritization  
+
+---
+
+## 📈 Outputs
+
+- District Gap Severity Index  
+- Ranked list of high-burden districts  
+- Visual analysis (charts & tables)  
+- Policy-ready insights  
+
+---
+
+## 🏥 Policy Implications
+
+- High-gap districts require urgent infrastructure strengthening  
+- Workforce vacancies are a major contributor to service gaps  
+- Targeted recruitment and monitoring can improve outcomes  
+- Model can support ICDS and Poshan Abhiyaan planning  
+
+---
+
+## 🧪 Pilot Districts
+
+- Narmada (Gujarat)  
+- Gadchiroli (Maharashtra)  
+- Chandrapur (Maharashtra)  
+- Nanded (Maharashtra)  
+
+---
+
+## 🚀 Future Scope
+
+- State-level aggregation and comparison  
+- Block-level analysis  
+- Interactive dashboard development  
+- Integration with real-time Poshan Tracker data  
+
+---
+
+## 👨‍⚕️ Author
+
+Dr Shubhabrata Das  
 Public Health Professional | Homoeopathic Doctor
