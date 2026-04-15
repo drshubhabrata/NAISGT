@@ -2,43 +2,80 @@
 
 ## National Anganwadi Infrastructure & Service Gap Tracker
 
-NAISGT is a data-driven public health platform that identifies infrastructure, workforce, and service delivery gaps in Anganwadi Centres across India, and converts them into actionable insights for decision-making.
+NAISGT is a data-driven public health platform that identifies infrastructure, workforce, and service delivery gaps in Anganwadi Centres across India and converts them into actionable insights for decision-making.
 
 ---
 
-## 🚀 How to Use NAISGT (Quick Start)
+# 🚀 How to Use NAISGT (Step-by-Step Guide)
 
-### 1. Download the project
+## 🧩 Step 1: Install Python
+
+1. Go to: https://www.python.org/downloads/
+2. Download Python (latest version)
+3. During installation, **IMPORTANT**:
+
+☑ Tick: **Add Python to PATH**
+Then click **Install Now**
+
+---
+
+## 🧩 Step 2: Download the Project
 
 Click **Code → Download ZIP**
 OR use:
+
 git clone https://github.com/drshubhabrata/NAISGT.git
 
 ---
 
-### 2. Install requirements
+## 🧩 Step 3: Open Terminal / Command Prompt
 
-pip install pandas streamlit
+Navigate to the project folder:
+
+cd path_to_downloaded_folder/NAISGT
+
+Example:
+
+cd Downloads/NAISGT-main
 
 ---
 
-### 3. Add your data
+## 🧩 Step 4: Install Required Libraries
 
-Place your dataset here:
+Run:
+
+python -m pip install pandas streamlit
+
+---
+
+## 🧩 Step 5: Add Your Data
+
+Place your dataset in:
 
 data/raw_data/anganwadi_data.csv
 
+👉 Your data should include columns like:
+
+* state
+* district
+* total_awcs
+* own_buildings
+* worker_sanctioned
+* worker_in_position
+* helper_sanctioned
+* helper_in_position
+
 ---
 
-### 4. Run the pipeline
+## 🧩 Step 6: Run the Pipeline
 
 python main.py
 
 ---
 
-### 5. View results
+## 📊 Outputs Generated
 
-Check the `output/` folder:
+Check the **output/** folder:
 
 * state_summary.csv → State-level gap analysis
 * district_gap_index.csv → District ranking & gap scores
@@ -47,110 +84,93 @@ Check the `output/` folder:
 
 ---
 
-### 6. (Optional) Run dashboard
+# 📊 Dashboard (Visual Interface)
+
+## ▶️ Run Dashboard
 
 streamlit run dashboard.py
 
 ---
 
-## 🎯 Objective
+## 🎯 What You Will See
 
-To build a national evidence-based monitoring system that highlights critical gaps in Anganwadi infrastructure, human resources, and service delivery using structured datasets.
+* 📊 State-wise gap score chart
+* 🔥 Top 5 high-priority states
+* 📍 District ranking table
+* 🔍 Filter districts by state
 
 ---
 
-## 📊 Gap Index Methodology
+## 🧠 Why Dashboard is Useful
 
-A composite **Anganwadi Gap Score** is calculated using:
+* No need to open CSV files
+* Easy for non-technical users
+* Interactive filtering and visualization
+
+---
+
+# ⚙️ How the System Works
+
+Raw Data
+→ Master Dataset Creation
+→ Gap Index Calculation
+→ District Ranking
+→ State Summary
+→ Priority Outputs
+
+---
+
+# 📊 Gap Index Methodology
 
 Gap Score =
 (0.5 × Infrastructure Gap) +
 (0.3 × Worker Vacancy Rate) +
 (0.2 × Helper Vacancy Rate)
 
-This weighted index helps prioritize districts with the most critical service gaps.
+---
+
+# 📈 Outputs
+
+* District Gap Severity Index
+* Ranked district list (with categories)
+* State-level prioritization
+* Top critical states and districts
+* Interactive dashboard
 
 ---
 
-## ⚙️ How the System Works
+# 🏥 Use Cases
 
-Raw Data → Master Dataset → Gap Index Calculation → State Summary → Priority Outputs
-
-NAISGT automatically processes district-level data and generates decision-ready outputs for program planning.
+* Government program monitoring (ICDS, Poshan Abhiyaan)
+* NGO and CSR planning
+* Public health research
+* District-level intervention prioritization
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 NAISGT/
 ├── analysis/ → Core logic modules
 ├── data/
 │   ├── raw_data/ → Input data
-│   └── processed_data/ → Intermediate outputs
-├── output/ → Final results
-├── main.py → Run entire pipeline
-├── dashboard.py → Interactive dashboard
+│   └── processed_data/ → Intermediate files
+├── output/ → Final outputs
+├── main.py → Run pipeline
+├── dashboard.py → Visual dashboard
 
 ---
 
-## 📊 Outputs
+# 🚀 Future Scope
 
-* District Gap Severity Index
-* Ranked list of districts (with gap scores & categories)
-* State-level prioritization
-* Top critical states and districts
-* Dashboard visualization (optional)
-
----
-
-## 🔍 Key Findings (Pilot Analysis)
-
-* Narmada (Gujarat) shows high gap levels
-* Maharashtra districts (Gadchiroli, Chandrapur, Nanded) show consistent service gaps
-* Urban districts (Hyderabad, Bengaluru, Chennai) also show emerging gaps
-* Kerala districts show relatively lower gap scores
+* Block-level analysis
+* Real-time data integration
+* AI-based insights
+* Advanced dashboards with maps
 
 ---
 
-## 📂 Data Sources
-
-* ICDS administrative data
-* Poshan Tracker datasets
-* NFHS survey data
-* Census demographic data
-
----
-
-## 🏥 Policy Implications
-
-* High-gap districts require urgent infrastructure strengthening
-* Workforce vacancies significantly impact service delivery
-* Targeted recruitment and monitoring can improve outcomes
-* Model supports ICDS and Poshan Abhiyaan planning
-
----
-
-## 🧪 Pilot Districts
-
-* Narmada (Gujarat)
-* Gadchiroli (Maharashtra)
-* Chandrapur (Maharashtra)
-* Nanded (Maharashtra)
-
----
-
-## 🚀 Future Scope
-
-* Block-level and facility-level analysis
-* Real-time integration with Poshan Tracker
-* Advanced dashboards and visualization
-* AI-driven insights for policy planning
-
----
-
-## 👨‍⚕️ Author
+# 👨‍⚕️ Author
 
 Dr. Shubhabrata Das
 Public Health Professional | Homoeopathic Doctor
-
----
