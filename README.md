@@ -6,9 +6,9 @@ NAISGT is a data-driven public health platform that identifies infrastructure, w
 
 ---
 
-# 🚀 How to Use NAISGT (Step-by-Step Guide)
+#  How to Use NAISGT (Step-by-Step Guide)
 
-## 🧩 Step 1: Install Python
+##  Step 1: Install Python
 
 1. Go to: https://www.python.org/downloads/
 2. Download Python (latest version)
@@ -19,7 +19,7 @@ Then click **Install Now**
 
 ---
 
-## 🧩 Step 2: Download the Project
+##  Step 2: Download the Project
 
 Click **Code → Download ZIP**
 OR use:
@@ -28,7 +28,7 @@ git clone https://github.com/drshubhabrata/NAISGT.git
 
 ---
 
-## 🧩 Step 3: Open Terminal / Command Prompt
+##  Step 3: Open Terminal / Command Prompt
 
 Navigate to the project folder:
 
@@ -40,7 +40,7 @@ cd Downloads/NAISGT-main
 
 ---
 
-## 🧩 Step 4: Install Required Libraries
+##  Step 4: Install Required Libraries
 
 Run:
 
@@ -48,13 +48,13 @@ python -m pip install pandas streamlit
 
 ---
 
-## 🧩 Step 5: Add Your Data
+##  Step 5: Add Your Data
 
 Place your dataset in:
 
 data/raw_data/anganwadi_data.csv
 
-👉 Your data should include columns like:
+ Your data should include columns like:
 
 * state
 * district
@@ -67,13 +67,13 @@ data/raw_data/anganwadi_data.csv
 
 ---
 
-## 🧩 Step 6: Run the Pipeline
+##  Step 6: Run the Pipeline
 
 python main.py
 
 ---
 
-## 📊 Outputs Generated
+##  Outputs Generated
 
 Check the **output/** folder:
 
@@ -84,7 +84,7 @@ Check the **output/** folder:
 
 ---
 
-# 📊 Dashboard (Visual Interface)
+#  Dashboard (Visual Interface)
 
 ## ▶️ Run Dashboard
 
@@ -92,7 +92,7 @@ streamlit run dashboard.py
 
 ---
 
-## 🎯 What You Will See
+##  What You Will See
 
 * 📊 State-wise gap score chart
 * 🔥 Top 5 high-priority states
@@ -101,7 +101,7 @@ streamlit run dashboard.py
 
 ---
 
-## 🧠 Why Dashboard is Useful
+##  Why Dashboard is Useful
 
 * No need to open CSV files
 * Easy for non-technical users
@@ -161,7 +161,7 @@ NAISGT/
 
 ---
 
-# 🚀 Future Scope
+#  Future Scope
 
 * Block-level analysis
 * Real-time data integration
