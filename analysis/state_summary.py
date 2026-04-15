@@ -9,4 +9,15 @@ def generate_summary(df):
         by="naiskt_gap_score", ascending=False
     )
 
+    # 🔥 ADD THIS PART
+    def assign_priority(score):
+        if score >= 70:
+            return "High"
+        elif score >= 40:
+            return "Medium"
+        else:
+            return "Low"
+
+    state_summary["Priority"] = state_summary["naiskt_gap_score"].apply(assign_priority)
+
     return state_summary
