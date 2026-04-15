@@ -9,11 +9,11 @@ def generate_summary(df):
         by="naiskt_gap_score", ascending=False
     )
 
-    # 🔥 ADD THIS PART
+    # ✅ Correct priority logic (based on 0–1 scale)
     def assign_priority(score):
-        if score >= 70:
+        if score >= 0.5:
             return "High"
-        elif score >= 40:
+        elif score >= 0.3:
             return "Medium"
         else:
             return "Low"
