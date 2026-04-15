@@ -1,9 +1,12 @@
 import pandas as pd
 
-df = pd.read_csv("../data/processed_data/anganwadi_gap_index.csv")
+def generate_summary(df):
+    # Group by state and calculate mean gap score
+    state_summary = df.groupby("state")["naiskt_gap_score"].mean().reset_index()
 
-state_summary = df.groupby("state")["naiskt_gap_score"].mean().reset_index()
+    # Sort by highest gap (priority)
+    state_summary = state_summary.sort_values(
+        by="naiskt_gap_score", ascending=False
+    )
 
-state_summary = state_summary.sort_values(by="naiskt_gap_score", ascending=False)
-
-print(state_summary)
+    return state_summary
